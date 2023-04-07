@@ -118,6 +118,10 @@ nav li {
     border: 1px solid black;
 }
 
+#navbar {
+    top: 0;
+}
+
 .pricing h3 {
     text-transform: uppercase;
     margin-top: 0;
@@ -178,7 +182,40 @@ button:hover {
 }
 
 @media only screen and (max-width: 750px) {
+    nav {
+        transform: translateX(-10%);
+    }
     img {
         display: none;
+    }
+    .pricing {
+        flex-direction: column;
+    }
+    .features {
+        transform: translateX(0%);
+    }
+    .features h1 {
+        margin-left: 2em;
+        font-size: 1.2em;
+        margin-top: 5em;
+    }
+    .features button {
+        width: 30%;
+    }
+    .features input {
+        width: 15em;
+    }
+    .how-it-works {
+        flex-direction: column;
+        transform: translateX(20%);
+        margin-left: 0;
+    }
+    .pricing {
+        margin-top: 32em;
+    }
+    footer {
+        margin: 0;
+        width: fit-content;
+        padding-left: 100px;
     }
 }
